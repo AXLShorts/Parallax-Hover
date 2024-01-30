@@ -22,14 +22,31 @@ body {
   bottom: 0;
   height: 35vh;
   width: 100vw;
-  background: linear-gradient(to top, black, transparent);
+  background: linear-gradient(180deg, rgba(2, 1, 2, 0), #020102);
+}
+
+.gradient-overlay h1 {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 5%;
+  padding-bottom: 10vh;
+  font-size: 10vw;
+  line-height: 0.8;
+  background: linear-gradient(180deg, #fff, #2d2b36);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  bottom: 0;
 }
 
 .parallax-div img {
   position: absolute;
   width: 27.78vw;
   aspect-ratio: 1/1;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.5s linear;
 }
 

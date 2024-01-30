@@ -18,20 +18,22 @@
         <img src="https://picsum.photos/800" alt="" />
         <img src="https://picsum.photos/900" alt="" />
       </div>
+      <div class="gradient-overlay"></div>
     </div>
     <script>
       const mainDiv = document.querySelector(".main-div");
       const parallaxDiv = document.querySelector(".parallax-div");
 
-      const sensitivity = 150;
+      const Xsensitivity = 100;
+      const Ysensitivity = 150;
 
       mainDiv.addEventListener("mousemove", (e) => {
         const x = e.clientX;
         const y = e.clientY;
         parallaxDiv.style.transform = `
           translate(
-              ${-x / sensitivity}%,
-              ${-y / sensitivity}%
+              ${-x / Xsensitivity}%,
+              ${-y / Ysensitivity}%
           )`;
         parallaxDiv.style.transition = "all 0.5s ease-out";
       });
